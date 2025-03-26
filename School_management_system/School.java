@@ -23,4 +23,24 @@ public class School {
     public void addTeacher(Teacher teacher){
         teachers.add(teacher);
     }
+
+    public void addStudent(Student student){
+        students.add(student);
+    }
+
+    public int getTotalMoneyEarned(){
+        return totalMoneyEarned;
+    }
+
+    public static void updateTotalMoneyEarned(int MoneyEarned){
+        totalMoneyEarned += MoneyEarned;
+    }
+
+    public int getTotalMoneySpent(){
+        return totalMoneySpent;
+    }
+
+    public static void updateTotalMoneySpent(int moneySpent){
+        totalMoneyEarned -= moneySpent;
+    }
 }

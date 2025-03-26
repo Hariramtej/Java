@@ -1,3 +1,5 @@
+package School_management_system;
+
 public class Student {
 
     private int id;
@@ -16,6 +18,11 @@ public class Student {
 
     public void setGrade(int grade){
         this.grade = grade;
+    }
+
+    public void payFees(int fees){
+        feesPaid += fees;
+        School.updateTotalMoneyEarned(feesPaid);
     }
 
 
